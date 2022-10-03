@@ -11,11 +11,11 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <header class="flex flex-row justify-between p-4">
+    <header class="flex flex-row justify-between items-center text-4xl bg-blue-300 p-6">
         <div>
-            <ul class="flex flex-row gap-3">
+            <ul class="flex flex-row items-center gap-3">
                 <li>
-                    <p>{{ config('app.name') }}</p>
+                    <p class="text-6xl">{{ config('app.name') }}</p>
                 </li>
                 <li>
                     <a href="{{ route('home') }}">Accueil</a>
@@ -40,7 +40,7 @@
 
     @yield('content')
 
-    <footer class="text-center text-3xl p-6">
+    <footer class="text-center text-3xl bg-blue-300 p-6">
         Copyright &copy {{ now()->year }} - {{ config('app.name') }}
     </footer>
 
